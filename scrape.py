@@ -29,7 +29,7 @@ def scrape():
     sets = []
     for problem in problems:
         # 题目的编号、标题
-        Id, title = problem.get_text().split()
+        Id, title, = problem.get_text().split(maxsplit=1)
 
         # 题目内容并转为字符串
         article = _scrape(main_url + Id, "article", False)
