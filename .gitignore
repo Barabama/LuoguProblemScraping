@@ -1,3 +1,4 @@
-Problems
-.venv
-.idea
+/Problems/
+/.venv/
+/.idea/
+/__pycache__/
